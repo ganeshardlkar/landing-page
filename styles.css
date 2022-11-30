@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+} 
+body {
+    overflow-x: hidden;
+}
+
+/* NAVBAR  */
+.navbar {
+    position: sticky;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+.mobile-navbar-icon {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+    
+}
+.nav-links {
+    display: flex;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 15px;
+}
+.business-name {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+/* BODY  */
+.main-body {
+    background-color: #000000;
+}
+.body-part {
+    display: flex;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+
+    width: 100%;
+    height: 1030px;
+}
+.body-part-content1 {
+    font-weight: 700;
+    font-size: 200px;
+    width: 100vh;
+    height: 745px;
+    margin-left: 50px;
+    margin-top: 50px; 
+
+    animation-name: fading-in;
+    animation-duration: 2s;
+} 
+@keyframes fading-in {
+    0%{
+        font-size: 0px;
+    }
+    100% {
+        font-size: 200px;
+    }
+}
+.laptop-img {
+    background-image: url(images/laptop.svg);
+    background-repeat: no-repeat;
+    width: 734px;
+    height: 395px;
+    margin-top: 515px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+
+    font-size: 60px;
+    font-weight: 100;
+    padding-bottom: 40px;
+}
+.anchor-icon {
+    color: #FFFFFF;
+}
+
+
+/* ABOUT US  */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    margin: 200px 50px;
+}
+.img-2 {
+    background-image: url(images/about-us-img.svg);
+    min-width: 500px;
+    min-height: 700px;
+}
+.about-us-section {
+    margin-left: 70px;
+}
+.about-us-section .about-us-text{
+    font-weight: 700;
+    font-size: 100px;
+}
+.text-inside-about-us {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29.05px;
+    margin-top: 40px;
+}
+
+/* OUR SERVICE  */
+
+.our-services {
+    font-family: 'Inter', sans-serif;
+    margin: 0 50px;
+}
+.out-services-text {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121.02px;
+}
+.service-cards-collection {
+    display: flex;
+    overflow-x: scroll;
+
+    margin-top: 70px;
+}
+.service-card {
+    border: 2px solid #000000;
+    padding: 30px 30px;
+    margin-left: 40px;
+}
+.service-card:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.service-card-heading {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60.51px;
+}
+.service-card-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    width: 510px;
+    height: 254px;
+    margin-top: 30px;
+}
+.dark-border {
+    background-color: #000000;
+    border: 10px solid #000000;
+    height: 0px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+
+/* CONTACT US  */
+.contact-us {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 120vh;
+}
+.contact-us-heading {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+    padding: 80px 0;
+}
+.form-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-element{
+    background-color: #000000;
+    border: 1px solid #FFFFFF;
+    color: white;
+    min-width: 1372px;
+    min-height: 72px;
+
+    font-weight: 300;
+    font-size: 24px;
+
+    padding: 10px;
+    margin: 15px 0;
+}
+.submit-btn {
+    min-width: 260.75px;
+    min-height: 58px;
+    background-color: #FFFFFF;
+    font-weight: 300;
+    font-size: 24px;
+
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+    /* NAVBAR  */
+    .navbar {
+        position: relative;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links {
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        position: absolute;
+        left: 0;
+
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .active .nav-links {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active .mobile-navbar-icon .mobile-nav-icon[name="close-outline"]{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .active .mobile-navbar-icon .mobile-nav-icon[name="menu-outline"]{
+        display: none;
+    }
+    .mobile-navbar-icon {
+        display: block;
+        z-index: inherit;
+    }
+
+    /* BODY  */
+    .body-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .body-part-content1 {
+        font-weight: 500;
+        font-size: 100px;
+        width: 650px;
+        height: 450px;
+    }
+    .laptop-img {
+        background-image: url(images/laptop.svg);
+        margin: 40px auto;
+        background-repeat: no-repeat;
+    }
+
+    /* ABOUT US  */
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-us-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .about-us-section .about-us-text{
+        font-weight: 500;
+        font-size: 100px;
+    }
+
+    /* OUR SERVICES */
+    .out-services-text {
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 121.02px;
+        text-align: center;
+    }
+
+   /* CONTACT US  */
+   .contact-us-heading {
+    font-weight: 500;
+    font-size: 100px;
+    padding: 60px 0;
+    }
+    .input-element{
+        background-color: #000000;
+        border: 1px solid #FFFFFF;
+        color: white;
+        min-width: 600px;
+        height: 20px;
+
+        font-weight: 300;
+        font-size: 24px;
+
+        padding: 10px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    /* BODY  */
+    
+    .body-part {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .body-part-content1 {
+        font-weight: 400;
+        font-size: 60px;
+        margin: 30px 0;
+        width: 350px;
+        height: 200px;
+    }
+    .laptop-img {
+        background-image: url(images/laptop.svg);
+        background-repeat: no-repeat;
+        margin: 10px auto;
+    }
+
+    /* ABOUT US  */
+    .about-us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 90px 50px;
+    }
+    .img-2 {
+        min-width: 330px;
+        min-height: 630px;
+    }
+    .about-us-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-us-section{
+        font-weight: 200;
+        font-size: 80px;
+        font-size: 50px;
+
+        margin: 10px 50px;
+    }
+    .about-us-text {
+        text-align: center;
+
+    }
+    .text-inside-about-us {
+        text-align: center;
+    }
+
+
+
+    /* OUR SERVICES  */
+    .out-services-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .service-cards-collection {
+        margin-top: 20px;
+    }
+
+    /* CONTACT US  */
+    .contact-us-heading {
+        font-size: 50px;
+        max-height: 700px;
+    }
+    .input-element {
+        min-width: 80px;
+    }
+}

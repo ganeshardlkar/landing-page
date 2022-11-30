@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/084588caec.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR  -->
+    <header class="navbar nav active">
+        <div class="business-name">
+            <h2>Business Name</h2>
+        </div>
+        <div class="nav-links">
+            <h2><a href="#home-id">Home</a></h2>
+            <h2><a href="#aboutus-id">About Us</a></h2>
+            <h2><a href="#knowmore-id">Know More</a></h2>
+            <h2><a href="#contact-id">Contact Us</a></h4>
+        </div>
+        <div class="mobile-navbar-icon">
+            <i name="menu-outline" class="fa-solid fa-bars mobile-nav-icon"></i>
+            <i name="close-outline" class="fa-solid fa-xmark mobile-nav-icon"></i>
+        </div>
+    </header>
+
+    <!-- BODY  -->
+    <div class="main-body">
+        <div class="body-part">
+            <h1 class="body-part-content1">BUSINESS LANDING PAGE</h1>
+            <!-- <img class="laptop-img" align="right" src="./images/laptop.jpg" alt="Laptop image"> -->
+            <div class="laptop-img" >
+            </div>
+        </div>
+        <div class="icon">
+            <a class="anchor-icon" href="#knowmore-id"><i class="fa-solid fa-arrow-down-long"></i></a>
+        </div>
+    </div>
+    
+
+    <!-- ABOUT US  -->
+    <div class="about-us" id="aboutus-id">
+        <div class="img-2"></div>
+        <div class="about-us-section">
+            <h3 class="about-us-text">ABOUT US</h3>
+            <p class="text-inside-about-us">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+
+    <!-- OUR SERVICES  -->
+    <div class="our-services" id="knowmore-id">
+        <h3 class="out-services-text">Our Services</h3>
+        <div class="service-cards-collection">
+            <div class="service-card">
+                <h5 class="service-card-heading">Service 1</h5>
+                <p class="service-card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, perspiciatis nulla hic excepturi consequuntur soluta officia aut quibusdam iusto ea illum voluptates asperiores tenetur in nemo libero provident, temporibus aliquam!</p>
+            </div>
+            <div class="service-card">
+                <h5 class="service-card-heading">Service 2</h5>
+                <p class="service-card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, perspiciatis nulla hic excepturi consequuntur soluta officia aut quibusdam iusto ea illum voluptates asperiores tenetur in nemo libero provident, temporibus aliquam!</p>
+            </div>
+            <div class="service-card">
+                <h5 class="service-card-heading">Service 3</h5>
+                <p class="service-card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, perspiciatis nulla hic excepturi consequuntur soluta officia aut quibusdam iusto ea illum voluptates asperiores tenetur in nemo libero provident, temporibus aliquam!</p>
+            </div>
+        </div>
+        <div class="dark-border"></div>
+    </div>
+
+    <!-- CONTACT US  -->
+    <div class="contact-us" id="contact-id">
+        <h2 class="contact-us-heading">CONTACT US</h2>
+        <form action="" class="form-element">
+            <input class="input-element" type="text" placeholder="Full Name" required>
+            <input class="input-element" type="text" placeholder="Last Name" required>
+            <input class="input-element" type="email" placeholder="Email Address" required>
+            <input class="input-element" type="text" placeholder="Reason For Contacting" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const mobile_nav = document.querySelector(".mobile-navbar-icon");
+
+        const nav_header = document.querySelector('.navbar');
+            
+            
+        const toggleNavbar = () => {
+            nav_header.classList.toggle("active");
+        }
+        
+        mobile_nav.addEventListener('click', ()=> toggleNavbar())
+    </script>
+</body>
+</html>
